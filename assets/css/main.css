@@ -1765,13 +1765,14 @@ button{background-color:transparent;border:0}h1,h3,h4,h5,h6,a,p,label,ul,button{
 .card .card-header i{margin-right:10px}.card .search{padding:30px;padding-bottom:20px}
 .card .search .input-group input{border-right:0}.card .search .input-group input:focus{background-color:#fff;-webkit-box-shadow:none;box-shadow:none;border-color:#ced4da}
 .card .search .input-group-append span{background-color:#fff;border-left:0}.card .search .input-group-append span i{color:#ccc}
-.card .card-body .body-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.card .card-body .body-header .card-title a{color:#212529;font-size:16px}@media(min-width:768px){.card .card-body .body-header .card-title a{font-size:20px}
+.card .card-body .body-header{margin-bottom:15px}.card .card-body .body-header .card-title a{color:#212529;font-size:16px}
+@media(min-width:768px){.card .card-body .body-header .card-title a{font-size:20px}
 }.card .card-body .body-header ul{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0}
 .card .card-body .body-header ul li{color:#333}.card .card-body .body-header ul li a{color:#333;font-size:12px}
 @media(min-width:768px){.card .card-body .body-header ul li a{font-size:14px}}.card .card-body .body-header ul li i{color:#333;font-size:11px}
 @media(min-width:768px){.card .card-body .body-header ul li i{font-size:14px}}.card .card-body .body-header ul li+li{margin-left:15px}
-.card .card-body p{font-size:14px}@media(min-width:768px){.card .card-body p{font-size:18px}
+@media(min-width:768px){.card .card-body .body-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:0}
+}.card .card-body p{font-size:14px}@media(min-width:768px){.card .card-body p{font-size:18px}
 }.card .card-body p small{font-size:11px}@media(min-width:768px){.card .card-body p small{font-size:12px}
 }.card .pagination-items .card-body+.card-body:before,.card #github_search .card-body+.card-body:before{content:'';height:1px;width:100%;margin:0 auto 30px auto;display:block;background-color:#eee}
 .pagination{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:cecnter;-ms-flex-align:cecnter;align-items:cecnter;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:10px}
