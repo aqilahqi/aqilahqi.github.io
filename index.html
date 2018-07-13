@@ -14,9 +14,12 @@
         <div class="card">
             <h5 class="card-header"> <i class="fab fa-github-alt"></i> Github Search</h5>
             <div class="search">
-                <form action="">
+                    <div class="alert alert-danger" role="alert" id="not-found" style="display:none;">
+                            No repository found
+                    </div>
+                <form>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search repository" id="gt_keyword">
+                        <input type="text" class="form-control" placeholder="Search repository" id="github_keyword">
                         <div class="input-group-append">
                             <span class="input-group-text"><button type="submit" id="gt_btn"><i class="fas fa-search"></i></button></span>
                         </div>
