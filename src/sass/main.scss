@@ -1,0 +1,39 @@
+/**
+* Bootstrap Breakpoints
+* use below to modify CONTAINER max-width;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+* Example Usage:
+@include media-breakpoint-up(lg) {
+    font-size: 60px;
+}
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-between(md, xl) { ... }
+
+* How to add fontawesome
+&:after{
+    *  refer to font awesome website
+    * https://fontawesome.com/cheatsheet
+    * abstracts: _mixins.scss
+    @include fontawesome-icon(brands);
+    content: $fa-var-fort-awesome;
+}
+
+*/
+@import 'abstracts/*';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'vendors/fontawesome/fontawesome';
+@import 'base/*';
+@import 'layout/*';
+@import 'components/*';
+@import 'themes/*';
+@import 'shame';

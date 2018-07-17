@@ -1,0 +1,131 @@
+.card {
+    .card-header {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 10px;
+        }
+    }
+    .search {
+        padding: 30px;
+        padding-bottom: 20px;
+        .input-group {
+            input {
+                border-right: 0;
+                &:focus {
+                    background-color: #fff;
+                    box-shadow: none;
+                    border-color: #ced4da;
+                }
+            }
+        }
+        .input-group-append {
+            span {
+                background-color: #fff;
+                border-left: 0;
+                i {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .card-body {
+        .body-header {
+            margin-bottom: 15px; 
+            .card-title a {
+                color: #212529;
+                font-size: 16px;
+                @include media-breakpoint-up(md) {
+                    font-size: 20px;
+                }
+            }
+            ul {
+                list-style:none;
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                li {
+                    color: #333;
+                    a {
+                        color: #333;
+                        font-size: 12px;
+                        @include media-breakpoint-up(md) {
+                            font-size: 14px;
+                        }
+                    }
+                    i {
+                        color: #333;
+                        font-size: 11px;
+                        @include media-breakpoint-up(md) {
+                            font-size: 14px;
+                        }
+                    }
+                    + li {
+                        margin-left: 15px;
+                    }
+                }
+            }
+            @include media-breakpoint-up(md) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0; 
+            }
+        }
+        p {
+            font-size: 14px;
+            @include media-breakpoint-up(md) {
+                font-size: 18px;
+            }
+            small {
+                font-size: 11px;
+                @include media-breakpoint-up(md) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .pagination-items, #github_search {
+        .card-body + .card-body {
+            &:before {
+                content:'';
+                height: 1px;
+                width: 100%;
+                margin: 0 auto 30px auto;
+                display: block;
+                background-color: #eee;
+            }
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: cecnter;
+    justify-content: center;
+    padding: 10px;
+    span {
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: #007bff;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        cursor: pointer;
+        &:first-child {
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+        &:last-child {
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+        &:hover {
+            text-decoration: none;
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+    }
+}

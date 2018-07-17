@@ -1,0 +1,71 @@
+/* font awesome font type */
+@mixin fontawesome-icon($type) {
+    @if $type == brands{
+        font-family : "Font Awesome 5 Brands";
+        font-weight : 400;
+    }@else if $type == solid{
+        font-family : 'Font Awesome 5 Free';
+        font-weight : 900;
+    }@else if $type == regular{
+        font-family : 'Font Awesome 5 Free';
+        font-style  : normal;
+        font-weight : 400;
+    }@else{
+        font-family : 'Font Awesome 5 Free';
+        font-style  : normal;
+        font-weight : 400;
+    }
+}
+
+/* even padding top & bottom */
+@mixin even-y-padding($padding){
+    padding-top     : $padding;
+    padding-bottom  : $padding;
+}
+
+/* even padding left & right */
+@mixin even-x-padding($padding){
+    padding-left    : $padding;
+    padding-right   : $padding;
+}
+
+/* flex alignment (*align-*justify) */
+@mixin flex-alignment($alignment){
+    @if $alignment == center-center{
+        @extend .d-flex;
+        @extend .justify-content-center;
+        @extend .align-items-center;
+    }@else if $alignment == center-start{
+        @extend .d-flex;
+        @extend .justify-content-start;
+        @extend .align-items-center;
+    }@else if $alignment == center-end{
+        @extend .d-flex;
+        @extend .justify-content-end;
+        @extend .align-items-center;
+    }@else if $alignment == start-center{
+        @extend .d-flex;
+        @extend .justify-content-center;
+        @extend .align-items-start;
+    }
+}
+
+@mixin font-body($weight){
+    @if $weight == light{
+        font-family : $font-body;
+        font-weight : 300;
+    }@else if $weight == regular{
+        font-family : $font-body;
+        font-weight : 400;
+    }@else if $weight == semi{
+        font-family : $font-body;
+        font-weight : 600;
+    }
+    @else if $weight == bold{
+        font-family : $font-body;
+        font-weight : 700;
+    }@else{
+        font-family : $font-body;
+        font-weight : 400;
+    }
+}

@@ -1,0 +1,48 @@
+// .single-layout{}
+
+.tile-layout{
+    @extend .d-flex;
+    justify-content: space-between;
+    width    : 100%;
+    flex-wrap: wrap;
+    .tile-item{
+        text-align: center;
+        margin    : 0 20px;
+        i{
+            font-size    : 72px;
+            margin-bottom: 26px;
+            color        : color("primary");
+        }
+        @include media-breakpoint-down(sm) {
+            flex-basis: 100%;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+    &.default-tile-layout{
+        @include even-y-padding(50px);
+        @include media-breakpoint-up(md) {
+            @include even-y-padding(52px);
+        }
+        @include media-breakpoint-up(lg) {
+            @include even-y-padding(144px);
+        }
+    }
+}
+
+.twin-layout{
+    align-items: center;
+    @include media-breakpoint-up(md) {
+        display:flex;
+    }
+    /* wrap items in this container */
+    @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+    }
+    .twin-item{
+        @include media-breakpoint-up(md) {
+            flex-basis: 50%;
+        }
+    }
+}

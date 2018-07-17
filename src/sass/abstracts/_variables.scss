@@ -1,0 +1,43 @@
+// Google font
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+// Font files
+@font-face {
+	font-family: "DroidSerif-Regular";
+	src : url("../fonts/DroidSerif-Regular.eot?") format("eot"),
+		    url("../fonts/DroidSerif-Regular.woff") format("woff"),
+		    url("../fonts/DroidSerif-Regular.ttf") format("truetype"),
+		    url("../fonts/DroidSerif-Regular.svg#DroidSerif-Regular") format("svg");
+}
+
+// Font Family
+$font-body : 'Poppins', sans-serif;
+$font-display : 'DroidSerif-Regular', serif;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+$colors: (
+  primary: #006cff,
+  dark   : #1b1d1f,
+  dark-1 : #141618,
+  light  : #f7f7f7,
+  light-1: #777777,
+);
+
+/* Grid breakpoints*/
+$grid-breakpoints: (
+  /* Extra small screen / phone */
+  xs: 0,
+  /* Small screen / phone */
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  /* Large screen / desktop */
+  lg: 992px,
+  /* Extra large screen / wide desktop */
+  xl: 1200px,
+  /* custom breakpoints*/
+  xxl: 1440px,
+
+  xxxl: 1600px
+);

@@ -1,0 +1,14 @@
+button, a{
+    &:hover{
+        text-decoration: none;
+    }
+    &.theme-btn{
+
+        &.primary{
+  
+        }
+        &.light{
+        }
+    }
+    /* bootstrap available button classes: .btn -> .btn-success, .btn-danger, .btn-warning, .btn-link */
+}
