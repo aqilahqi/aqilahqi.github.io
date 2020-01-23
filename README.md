@@ -1,3 +1,6 @@
 # search-github-repos
 
-How to list and search repositories on Github
+List and search repositories on Github
+Framework used:
+- vue js
+- materialize css
